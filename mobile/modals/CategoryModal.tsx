@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
+import { AddCategoryButton } from '../components/AddCategoryButton';
 import CategoryTile from '../components/CategoryTile';
 import Container from '../components/Container';
 import { HeaderButton } from '../components/HeaderButton';
@@ -7,11 +8,6 @@ import { CATEGORY } from '../constants';
 import { CategoryType } from '../provider/ExpenseIncomeProvider';
 import { ScreenProps } from '../screens/ScreenParamList';
 import { utilStyle } from '../styles';
-
-interface CategoryModalProps {
-
-}
-
 
 const CategoryModal: React.FC<ScreenProps<"Category">> = ({ navigation }) => {
     const [selected, setSelected] = useState<CategoryType | null>(null)
@@ -31,6 +27,7 @@ const CategoryModal: React.FC<ScreenProps<"Category">> = ({ navigation }) => {
             </View>
             <View style={{ flexWrap: 'wrap', flexDirection: 'row' }}>
                 {renderCategories()}
+                <AddCategoryButton />
             </View>
 
 
