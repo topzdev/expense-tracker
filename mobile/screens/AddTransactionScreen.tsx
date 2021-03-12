@@ -1,10 +1,10 @@
 import React, { useCallback, useContext, useState } from 'react'
-import { View, Text, TextInput, TouchableHighlight, Button, Platform, Alert } from 'react-native'
+import { View, Text, TouchableHighlight, Button, Platform, Alert } from 'react-native'
 import { ScreenProps } from './ScreenParamList'
 import { ExpenseIncomeContext, ExpenseIncomeType } from '../provider/ExpenseIncomeProvider'
-import { buttonStyle, formStyle, inputStyle, utilStyle } from '../styles'
-import { onChange } from 'react-native-reanimated'
+import { buttonStyle, formStyle, utilStyle } from '../styles'
 import DateTimePicker from '@react-native-community/datetimepicker';
+import InputPrimary from '../components/InputPrimary'
 
 const AddTransaction: React.FC<ScreenProps<"AddTransaction">> = ({ navigation }) => {
     const { addExpense } = useContext(ExpenseIncomeContext)
@@ -51,10 +51,10 @@ const AddTransaction: React.FC<ScreenProps<"AddTransaction">> = ({ navigation })
     return (
         <View style={{ ...utilStyle.container, ...utilStyle.center }}>
             <View style={formStyle.formGroup}>
-                <TextInput style={inputStyle.primaryInput} keyboardType="numeric" value={getAmount()} placeholder="Expenses Amount" onChangeText={text => onChange('amount', text)} />
+                <InputPrimary keyboardType="numeric" value={getAmount()} placeholder="Expenses Amount" onChangeText={text => onChange('amount', text)} />
             </View>
             <View style={formStyle.formGroup}>
-                <TextInput style={inputStyle.primaryInput} value={getCategory()} placeholder="Select Category" onChangeText={text => onChange('categoryId', text)} />
+                <InputPrimary value={getCategory()} placeholder="Select Category" onChangeText={text => onChange('categoryId', text)} />
             </View>
             <View style={formStyle.formGroup}>
                 <Button disabled={showDate} onPress={() => navigation.navigate('Category')} title="Category" />
@@ -63,7 +63,7 @@ const AddTransaction: React.FC<ScreenProps<"AddTransaction">> = ({ navigation })
                 <Button disabled={showDate} onPress={showDatePicker} title="Set Date" />
             </View>
             <View style={formStyle.formGroup}>
-                <TextInput style={inputStyle.primaryInput} value={expense.comment} placeholder="Comment" onChangeText={text => onChange('comment', text)} />
+                <InputPrimary value={expense.comment} placeholder="Comment" onChangeText={text => onChange('comment', text)} />
             </View>
 
             <View style={formStyle.formGroup}>

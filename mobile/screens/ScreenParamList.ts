@@ -11,6 +11,7 @@ export type ScreenParamList = {
   Settings: undefined;
   Profile: undefined;
   Category: undefined;
+  AddCategory: undefined;
 };
 
 export type ScreenProps<T extends keyof ScreenParamList> = {

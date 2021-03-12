@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { COLORS } from '../constants';
+import AddCategorModal from '../modals/AddCategorModal';
 import CategoryModal from '../modals/CategoryModal';
 import AddTransactionScreen from '../screens/AddTransactionScreen';
 import ProfileScreen from '../screens/ProfileScreen';
@@ -25,7 +26,7 @@ const HomeStack = () => {
             <Stack.Screen name="Home" component={HomeTabs} />
             <Stack.Screen name="AddTransaction" component={AddTransactionScreen} />
             <Stack.Screen name="Category" component={CategoryModal} />
-
+            <Stack.Screen name="AddCategory" component={AddCategorModal} />
         </Stack.Navigator>
     )
 }

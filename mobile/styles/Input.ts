@@ -2,10 +2,14 @@ import { StyleSheet } from "react-native";
 import { COLORS } from "../constants";
 
 export default StyleSheet.create({
-  primaryInput: {
+  primary: {
     padding: 10,
     borderWidth: 1,
-    borderColor: COLORS.primary,
-    borderRadius: 5,
+    borderColor: "transparent",
+    borderBottomColor: COLORS.primary,
+  },
+
+  primaryField: {
+    color: COLORS.white,
   },
 });
