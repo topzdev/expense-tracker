@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacityProps, TouchableOpacity } from 'react-native';
-import { COLORS } from '../constants';
+import { COLORS } from '../../constants';
 
 interface HeaderButtonProps extends TouchableOpacityProps {
 

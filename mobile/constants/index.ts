@@ -1,4 +1,4 @@
-import { CATEGORY } from "./data";
+import { CATEGORY, ICONS } from "./data";
 import { SIZES, COLORS } from "./theme";
 
-export { COLORS, CATEGORY };
+export { COLORS, CATEGORY, ICONS };

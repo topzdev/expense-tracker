@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { AuthContext } from '../provider/AuthProvider';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const HelloUser = () => {
     const { user } = useContext(AuthContext);

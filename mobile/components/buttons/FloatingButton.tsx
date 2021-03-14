@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons'
 import React from 'react'
 import { StyleSheet, TouchableOpacityProps, View, TouchableOpacity } from 'react-native'
-import { buttonStyle } from '../styles'
+import { buttonStyle } from '../../styles'
 
 interface Props extends TouchableOpacityProps {
     iconName: any

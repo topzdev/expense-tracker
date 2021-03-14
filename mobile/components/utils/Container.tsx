@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { utilStyle } from '../styles'
+import { utilStyle } from '../../styles'
 
 const Container = (props: any) => {
     return (

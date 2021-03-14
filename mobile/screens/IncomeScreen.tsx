@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, Text, FlatList } from 'react-native'
-import Container from '../components/Container'
-import HelloUser from '../components/HelloUser'
-import StatementCard from '../components/StatementCard'
+import Container from '../components/utils/Container'
+import HelloUser from '../components/defaults/HelloUser'
+import StatementCard from '../components/cards/StatementCard'
 import { EXPENSES_DUMMY } from '../constants/data'
 
 const IncomeScreen = () => {

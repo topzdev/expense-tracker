@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, TouchableHighlight } from 'react-native'
-import { CATEGORY, COLORS } from '../constants';
-import { ExpenseIncomeType } from '../provider/ExpenseIncomeProvider';
+import { CATEGORY, COLORS } from '../../constants';
+import { ExpenseIncomeType } from '../../provider/ExpenseIncomeProvider';
 import { Ionicons } from '@expo/vector-icons'
 import { color } from 'react-native-reanimated';
 

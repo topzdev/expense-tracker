@@ -1,0 +1,11 @@
+{
+    "html.format.wrapAttributes": "force",
+    "editor.wordWrap": "on",
+    "prettier.packageManager": "yarn",
+    "prettier.tabWidth": 4,
+    "prettier.proseWrap": "never",
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "diffEditor.wordWrap": "off",
+    "editor.snippetSuggestions": "bottom"
+}

@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AuthContext } from './provider/AuthProvider';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ActivityIndicator, Linking, Platform, Text } from 'react-native';
-import Center from './components/Center';
+import Center from './components/utils/Center';
 import { ExpenseIncomeContext } from './provider/ExpenseIncomeProvider';
 import AppDrawer from './drawers/AppDrawer';
 
