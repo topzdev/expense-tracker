@@ -44,7 +44,7 @@ class AuthenticationController extends Controller
         ]);
         $accessToken = Auth::user()->createToken("authToken")->accessToken;
         $responseData = [
-            "data" => $createdUser,
+            "user" => $createdUser,
             "access_token" => $accessToken,
         ];
         return Helper::formatApiResponse(
@@ -89,7 +89,7 @@ class AuthenticationController extends Controller
         $user = Auth::user();
         $accessToken = Auth::user()->createToken("authToken")->accessToken;
         $responseData = [
-            "data" => $user,
+            "user" => $user,
             "access_token" => $accessToken,
         ];
         return Helper::formatApiResponse(
